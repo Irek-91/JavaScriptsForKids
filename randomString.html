@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Моя первая настоящая HTML-страничка</title>
+</head>
+<body>
+    <h1>Привет, мир!</h1>
+    <script>
+        var alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+        var randomString = ""
+        while (randomString.length < 6) {
+            randomString = randomString + alphabet[(Math.floor(Math.random() *alphabet.length))];
+            randomString.length++;
+        }
+        alert(randomString);
+    </script>
+</body>
+</html>
