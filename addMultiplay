@@ -1,0 +1,7 @@
+var add = function(add1, add2) {
+    return summ = add1 + add2;
+};
+var multiplay = function (add, add3) {
+    return multiplicat = add * add3;
+};
+add(multiplay(36325,9824), 777);
