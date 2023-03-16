@@ -1,3 +1,4 @@
+// продолжаем изучать книгу
 var add = function(add1, add2) {
     return summ = add1 + add2;
 };
