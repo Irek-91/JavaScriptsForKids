@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Моя первая настоящая HTML-страничка</title>
+</head>
+<body>
+    <h1 id="main-heading">Привет, мир!</h1>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    
+    <script>
+        for (var i = 0, i < 3, i++) {
+        var hobby = prompt("Назовите имена ваших друзей");
+        $("body").append("<p>" + hobby + "</p>");
+        }
+        $("p").fadeOut(3500).fadeIn(3500);
+        $("#main-heading").text('Мои друзья');
+        $("p").append(' лучший');
+        
+    </script>
+</body>
+</html>
