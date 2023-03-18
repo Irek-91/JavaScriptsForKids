@@ -1,0 +1,17 @@
+
+//Отложенное выполнение кода и setTimeout
+var doHomeworkAlarm = function () {
+    alert("Эй! Пора делать домашку!");
+    };
+    var timeoutId = setTimeout(doHomeworkAlarm, 30000);
+    clearTimeout(timeoutId);
+
+//Многократный запуск кода и setInterval
+var counter = 1;
+var printMessage = function () {
+console.log("Ты смотришь в консоль уже " + counter + " сек");
+counter++;
+};
+var intervalId = setInterval(printMessage, 1000);
+clearInterval(intervalId); // ввести, для отмены
+
