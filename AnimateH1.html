@@ -26,7 +26,8 @@
                 iState = 0;
         }
     };
-    setInterval(Animate, 1000);
+    var intervalId = setInterval(Animate, 500);
+    $('h1').click(function(){clearInterval(intervalId);});
     </script>
 </body>
 </html>
