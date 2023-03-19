@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Интерактивное программирование</title>
+</head>
+<body>
+<h1 id="heading">Привет, мир!</h1>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"> 
+    </script>
+    <script>
+// Скоро здесь будет JavaScript-код
+        var leftOffset = 0;
+        var moveHeading = function () {
+        $("#heading").offset({ left: leftOffset });
+        leftOffset++;
+        if (leftOffset > 600) {
+            leftOffset = 0;
+            }
+        };
+        setInterval(moveHeading,10);
+    </script>
+</body>
+</html>
